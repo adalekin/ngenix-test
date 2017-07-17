@@ -1,0 +1,5 @@
+include README.md
+include LICENSE.md
+include versioneer.py
+include ngenix_test/__init__.py
+include ngenix_test/_version.py
