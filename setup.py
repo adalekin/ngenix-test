@@ -7,7 +7,7 @@ except ImportError:
     from distutils.core import setup, find_packages
 
 setup(
-    name='python-aiosocketio-client',
+    name='ngenix-test',
     version=versioneer.get_version(),
     packages=find_packages(),
     url='https://github.com/adalekin/ngenix-test',

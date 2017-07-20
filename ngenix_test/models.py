@@ -11,7 +11,10 @@ class Root:
     @classmethod
     def create(cls):
         obj = cls()
-        obj.id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
+        obj.id = ''.join(
+            list(map(lambda _: random.choice(string.ascii_uppercase + string.digits), range(10)))
+        )
+
         obj.level = random.randint(1, 100)
 
         obj.objects = [
@@ -29,7 +32,9 @@ class Object:
 
     @classmethod
     def create(cls):
-        name = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
+        name = ''.join(
+            list(map(lambda _: random.choice(string.ascii_uppercase + string.digits), range(10)))
+        )
 
         obj = cls()
         obj.name = name
